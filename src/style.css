@@ -9,5 +9,5 @@
 body {
 }
 .width {
-  @apply max-w-6xl mx-auto;
+  @apply max-w-[1500px] mx-auto;
 }
