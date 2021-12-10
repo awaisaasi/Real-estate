@@ -12,7 +12,7 @@
     <div>
       <!-- Head Screen -->
       <div class="bg-back h-screen bg-center bg-no-repeat bg-cover">
-        <div class="width">
+        <div class="width px-4">
           <nav class="flex justify-center items-center justify-between pt-10">
             <div class="flex text-3xl">
               <i class="mdi mdi-arrow-up-bold-outline text-white text-7xl"></i>
@@ -21,7 +21,18 @@
                 <h1>Estate</h1>
               </div>
             </div>
-            <div class="flex space-x-8 text-xl ml-96 text-white max-w-xl">
+            <div
+              class="
+                flex
+                space-x-8
+                text-xl
+                ml-96
+                text-white
+                hidden
+                md:block
+                max-w-xl
+              "
+            >
               <a class="font-semibold" href="">Home</a>
               <a class="opacity-70 font-semibold" href="">Features</a>
               <a class="opacity-70 font-semibold" href="">About</a>
@@ -58,7 +69,7 @@
       <!-- Containere Section-->
       <!-- Tab bar -->
       <div class="flex flex-col items-center width relative">
-        <div class="flex flex-col items-end">
+        <div class="flex flex-col items-end hidden md:block">
           <nav
             class="
               flex
@@ -66,9 +77,9 @@
               shadow-2xl
               rounded-tl-md rounded-tr-md
               -mt-32
-              mr-80
+              left-64
               py-3
-              px-5
+              px-4
               space-x-6
               absolute
             "
@@ -91,6 +102,8 @@
             p-8
             -mt-20
             w-2/3
+            hidden
+            md:block
           "
         >
           <div class="flex w-full justify-between items-center">
@@ -119,35 +132,21 @@
         </div>
         <!--End Tab bar -->
 
-        <div class="flex my-32 items-center justify-center space-x-20 w-full">
-          <div class="flex flex-col items-start w-1/2">
-            <p class="opacity-70 text-lg mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              commodi ab earum exercitationem necessitatibus iure hic dolorum
-              impedit.
-            </p>
-            <button
-              class="
-                text-white
-                bg-blue-600
-                text-lg
-                font-semibold
-                rounded-md
-                px-6
-                py-4
-                mb-16
-              "
-            >
-              Learn More
-            </button>
-            <img
-              class="rounded-md w-full h-full"
-              src="https://images.pexels.com/photos/1481105/pexels-photo-1481105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
-          </div>
-          <div class="flex flex-col w-1/2">
-            <h1 class="text-5xl font-semibold mb-16">
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            my-32
+            space-y-8
+            sm:space-y-0
+            items-center
+            justify-center
+            space-x-20
+            w-full
+          "
+        >
+          <div class="flex flex-col w-full px-4 md:w-1/2">
+            <h1 class="text-3xl md:text-5xl font-semibold mb-16">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. nostrum
               deleniti ab?
             </h1>
@@ -250,14 +249,41 @@
               </div>
             </div>
           </div>
+          <div class="bg-black h-[1px] w-full md:hidden"></div>
+          <div class="flex flex-col items-start w-full md:w-1/2">
+            <p class="opacity-70 text-lg mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              commodi ab earum exercitationem necessitatibus iure hic dolorum
+              impedit.
+            </p>
+            <button
+              class="
+                text-white
+                bg-blue-600
+                text-lg
+                font-semibold
+                rounded-md
+                px-6
+                py-4
+                mb-16
+              "
+            >
+              Learn More
+            </button>
+            <img
+              class="rounded-md w-full h-full"
+              src="https://images.pexels.com/photos/1481105/pexels-photo-1481105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <!--End Containere Section -->
 
       <!-- find property -->
       <div class="flex flex-col width">
-        <div class="flex flex-col items-center">
-          <h1 class="text-5xl font-semibold mb-10">
+        <div class="flex flex-col items-center px-4">
+          <h1 class="text-4xl md:text-5xl px-4 font-semibold md:mb-10">
             Find your perfect property
           </h1>
           <p class="my-8 text-center max-w-lg">
@@ -265,18 +291,31 @@
             eligendi quis velit.
           </p>
         </div>
-        <div class="flex space-x-8 items-center">
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            space-y-8
+            md:space-y-8
+            space-x-8
+            items-center
+          "
+        >
           <div
             class="
               flex
               bg-blue-600
               mdi mdi-less-than
               h-12
-              w-16
+              w-12
               rounded-full
               justify-center
               items-center
+              text-center
+              p-3
               text-white text-2xl
+              hidden
+              md:flex
             "
           ></div>
 
@@ -289,7 +328,7 @@
             <div class="flex flex-col pl-4 pr-4 pb-4">
               <h1 class="text-2xl mt-6">Observatery Garden</h1>
               <h2 class="mdi mdi-map-marker-outline opacity-60 text-xl">
-                Kingstin, Londin
+                Kingston, London
               </h2>
               <div class="flex justify-between items-center">
                 <h2 class="mdi mdi-gas-station text-2xl opacity-80">3</h2>
@@ -313,7 +352,7 @@
             <div class="flex flex-col pl-4 pr-4 pb-4">
               <h1 class="text-2xl mt-6">Observatery Garden</h1>
               <h2 class="mdi mdi-map-marker-outline opacity-60 text-xl">
-                Kingstin, Londin
+                Kingston, London
               </h2>
               <div class="flex justify-between items-center">
                 <h2 class="mdi mdi-gas-station text-2xl opacity-80">3</h2>
@@ -336,7 +375,7 @@
             <div class="flex flex-col bg-white pl-4 pr-4 pb-4">
               <h1 class="text-2xl mt-6">Observatery Garden</h1>
               <h2 class="mdi mdi-map-marker-outline opacity-60 text-xl">
-                Kingstin, Londin
+                Kingston, London
               </h2>
               <div class="flex justify-between items-center">
                 <h2 class="mdi mdi-gas-station text-2xl opacity-80">3</h2>
@@ -354,13 +393,17 @@
             class="
               flex
               bg-blue-600
-              mdi mdi-less-than
+              mdi mdi-greater-than
               h-12
-              w-16
+              w-12
               rounded-full
               justify-center
               items-center
+              text-center
+              p-3
               text-white text-2xl
+              hidden
+              md:flex
             "
           ></div>
         </div>
@@ -368,9 +411,21 @@
       <!-- find property -->
 
       <!-- new Section -->
-      <div class="flex my-20 width relative justify-center">
-        <div class="flex flex-col mr-20 w-1/2">
-          <h1 class="text-5xl max-w-2xl mt-16">
+      <div
+        class="
+          flex flex-col
+          md:flex-row
+          my-20
+          px-4
+          md:justify-center
+          space-y-6
+          md:space-y-6
+          width
+          md:relative
+        "
+      >
+        <div class="flex flex-col mr-20 w-full md:w-1/2">
+          <h1 class="text-3xl md:text-5xl max-w-2xl mt-16">
             What our client is saying About our service
           </h1>
           <p class="opacity-80 text-lg opacity-50 mt-8 mr-32 mb-12 max-w-md">
@@ -379,9 +434,17 @@
             ipsam.
           </p>
           <div class="flex space-x-6 items-center max-w-lg">
-            <div class="bg-blue-500 w-28 h-1 mr-20"></div>
+            <div class="bg-blue-500 w-28 h-1 mr-20 hidden md:block"></div>
             <i
-              class="mdi mdi-less-than px-2 py-1 rounded-md border border-gray"
+              class="
+                mdi mdi-less-than
+                px-2
+                py-1
+                rounded-md
+                hidden
+                md:block
+                border border-gray
+              "
             ></i>
             <i
               class="
@@ -390,6 +453,8 @@
                 py-1
                 rounded-md
                 text-blue-600
+                hidden
+                md:block
                 border border-blue-600
               "
             ></i>
@@ -399,14 +464,14 @@
           class="
             flex
             bg-white
-            mt-32
             p-6
-            ml-16
+            md:bottom-36 md:ml-28
             rounded-md
-            absolute
+            md:absolute
             shadow-2xl
             max-w-md
             justify-center
+            items-center
             border
           "
         >
@@ -428,7 +493,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
           <img
             class="rounded-md w-full h-full"
             src="https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscrapers-3184798__340.jpg"
@@ -437,16 +502,57 @@
         </div>
       </div>
       <!-- new Section -->
-      <div class="flex bg-backa bg-cover rounded-md justify-end width py-16">
+      <div
+        class="
+          flex
+          bg-backa bg-cover
+          rounded-md
+          justify-start
+          md:justify-end
+          width
+          py-16
+          px-4
+        "
+      >
         <div class="flex flex-col">
-          <h1 class="text-5xl mt-12 mb-8 text-white max-w-xl">
+          <h1
+            class="
+              text-3xl
+              font-semibold
+              md:text-5xl
+              mt-12
+              mb-8
+              text-white
+              max-w-xl
+            "
+          >
             Lorem ipsum dolor sit adipisicing elit. Explicabo, amet?
           </h1>
           <div
-            class="flex bg-white justify-between rounded-md px-4 py-2 max-w-lg"
+            class="
+              flex
+              bg-white
+              justify-between
+              rounded-md
+              px-4
+              py-2
+              max-w-xs
+              md:max-w-lg
+            "
           >
             <input class="" type="text" placeholder="Your Email Adress" />
-            <button class="bg-blue-600 text-xl rounded-md text-white px-4 py-2">
+            <button
+              class="
+                bg-blue-600
+                text-base
+                md:text-xl
+                rounded-md
+                text-white
+                px-4
+                py-2
+                -ml-32
+              "
+            >
               Subrcibe
             </button>
           </div>
@@ -454,16 +560,42 @@
       </div>
 
       <!-- Footer -->
-      <div class="flex width justify-between my-20">
-        <div class="flex flex-col space-y-4 w-1/4">
+      <div
+        class="
+          flex flex-col
+          md:flex-row
+          space-y-8
+          md:space-y-1
+          width
+          justify-between
+          my-20
+          px-4
+        "
+      >
+        <div class="flex flex-col space-y-4 w-full md:w-1/4">
           <div class="flex text-3xl">
-            <i class="mdi mdi-arrow-up-bold-outline text-blue-600 text-7xl"></i>
-            <div class="text-blue-600 font-sans">
+            <i
+              class="
+                mdi mdi-arrow-up-bold-outline
+                hidden
+                md:block
+                text-blue-600 text-7xl
+              "
+            ></i>
+            <div class="text-blue-600 font-sans hidden md:block">
               <h1>Real</h1>
               <h1>Estate</h1>
             </div>
           </div>
-          <p class="text-lg opacity-70 max-w-xs">
+          <p
+            class="
+              text-lg
+              opacity-100
+              font-semibold
+              md:font-normal md:opacity-70
+              max-w-xs
+            "
+          >
             Lorem ipsum, dolor sit amet consectetur adipisicing.
           </p>
           <div class="flex justify-start space-x-4">
@@ -483,6 +615,7 @@
             ></i>
             <i
               class="
+                flex
                 mdi mdi-facebook
                 border border-gray-300
                 rounded-full
@@ -496,6 +629,7 @@
             ></i>
             <i
               class="
+                flex
                 mdi mdi-pinterest
                 border border-gray-300
                 rounded-full
